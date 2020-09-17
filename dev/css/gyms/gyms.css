@@ -1,0 +1,309 @@
+* {margin:0;
+    padding:0;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    min-width: 260px;
+}
+
+.container {
+    min-height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    background: url(../../img/index/background-hader.jpg) repeat;
+    margin-left: 0;
+    padding: 20px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content p {
+    font-size: 18px;
+    color: rgb(138,148,148);
+    line-height: 30px;
+}
+
+.content {
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content h1    {
+    font-size: 19px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding-top: 12px;
+}
+
+
+.logo h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+a.chosen {
+    color: black;
+}
+
+.menu {
+    width: 50%;
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.menu nav {
+    font-size: 12px;
+    text-transform: uppercase;
+    height: 65px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 16px 20px 36px;
+    display: inline-block;
+    border-bottom: 4px solid transparent;
+}
+
+.menu nav a:after {
+    display: block;
+    content: "";
+    height: 5px;
+    width: 0;
+    background-color: black;
+    transition: width .3s ease-in-out;
+    margin-top: 30px;
+}
+
+.menu nav a:hover:after,
+.menu nav a:focus:after,
+.menu nav a:active:after {
+    width: 100%;
+}
+
+.menu nav a:hover {
+    color: black;
+}
+
+.menu nav a:focus,
+.menu nav a:active {
+    color: red;
+}
+
+h2.dashed:after {
+    content: "";
+    display: block;
+    height: 7px;
+    width: 75px;
+    background: rgb(241,196,15);
+    margin: 18px auto 10px;
+}
+
+.gym {
+    background: url(../../img/index/background1.jpg);
+    background-size: 100%;
+    border-top: solid 1px rgb(220, 220, 220);
+    padding: 1% 17%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services-shot h2 {
+    text-transform: uppercase;
+}
+
+.gym-shot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+    width: 50%;
+}
+
+.gym-shot div {
+    width: 100%;
+}
+
+.gym-shot div ul li:first-child {
+    text-transform: uppercase;
+}
+
+.map {
+    background: url(../../img/index/background-hader.jpg) repeat;
+    background-size: 100%;
+    border-top: solid 1px rgb(220, 220, 220);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    background: rgb(136,30,142);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1% 10%;
+}
+
+.info-shot {
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+    display: inline-block;
+}
+
+footer h3,
+footer h3 a {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer h3 a {
+    text-decoration: none;
+}
+
+.info-shot p,
+.info-shot ul li {
+    font: normal 14px Tahoma, sans-serif;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width:1200px) {
+    .logo {
+        padding: 6px 0 0 65px;
+        font-size: 25px;
+    }
+    .menu {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:992px) {
+    .logo {
+        padding: 6px 0 0 40px;
+        font-size: 20px;
+    }
+    .menu {
+        width: 80%;
+        max-width: 992px;
+        margin: 0 auto;
+    }
+    .menu nav {
+        font-size: 10px;
+        float: left;
+        text-transform: uppercase;
+    }
+    .nav a {
+        padding: 2px 3px 4px;
+        display: inline-block;
+    }
+    .menu nav a:hover:after,
+    .menu nav a:focus:after,
+    .menu nav a:active:after {
+        display: none;
+    }
+    img {
+        width: 200px;
+        height: 100px;
+    }
+}
+
+@media (max-width:768px) {
+    header {
+        height: 40px;
+    }
+    .logo {
+        padding: 2px 0 0 15px;
+        font-size: 15px;
+    }
+    .menu {
+        width: 75%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .menu nav {
+        font-size: 8px;
+        float: none;
+        text-transform: uppercase;
+    }
+    nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        padding: 4px 10px 0 15px;
+        display: inline-block;
+        border-bottom: 4px solid transparent;
+    }
+    .menu nav a:hover:after,
+    .menu nav a:focus:after,
+    .menu nav a:active:after {
+        display: none;
+    }
+}
+
+@media (max-width:576px) {
+    header {
+        height: 40px;
+    }
+    .logo {
+        padding: 2px 0 0 15px;
+        font-size: 12px;
+    }
+    .menu nav {
+        font-size: 7px;
+        float: none;
+        text-transform: uppercase;
+    }
+    nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        padding: 4px 10px 0 15px;
+        display: inline-block;
+        border-bottom: 4px solid transparent;
+    }
+    img {
+        width: 150px;
+        height: 50px;
+    }
+    .services h3 a,
+    footer h3 a,
+    .about h3 a {
+        font-size: 24px;
+    }
+}
